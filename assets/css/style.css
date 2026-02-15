@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.sidebar {
+    flex: 0 0 350px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.user-status {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.status-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.status-text .name {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+.status-text .status {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    color: #999;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.new-chat-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-new-chat {
+    background-color: #a291d2;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 90%;
+    max-width: 250px;
+}
+
+.btn-new-chat:hover {
+    background-color: #937dc2;
+}
+
+.contact-list {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f5f5f5;
+    cursor: pointer;
+    gap: 15px;
+    transition: background-color 0.2s;
+}
+
+.contact-item:hover {
+    background-color: #f9f9f9;
+}
+
+.contact-item .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-name {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+.contact-msg {
+    font-size: 0.9rem;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfdfd;
+}
+
+.welcome-container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.main-image {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #a291d2;
+}
+
+.welcome-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.welcome-container p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
