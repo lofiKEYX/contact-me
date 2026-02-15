@@ -174,3 +174,30 @@
     line-height: 1.6;
     font-size: 1.1rem;
 }
+
+.avatar-container {
+    position: relative;
+    display: inline-block;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+
+.status-online {
+    background-color: #2ecc71;
+}
+
+.status-offline {
+    background-color: #e74c3c;
+}
+
+.status-away {
+    background-color: #f1c40f;
+}
